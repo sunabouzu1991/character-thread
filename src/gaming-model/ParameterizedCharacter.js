@@ -116,6 +116,8 @@ export default class ParameterizedCharacter extends ModelSetting {
         bone: 'bone_camera'
     }
 
+    skinnedMesh;
+
     constructor () {
         super();
 

@@ -1,0 +1,7 @@
+3Д модель персонажа, анимации(AnimationClip)
+
+1)  Создать объект links = {key: mesh.uuid, matrixElement: mesh.matrix.element, worldMatrixElement: mesh.worldMatrix.element} или же вместо uuid связать по name
+    у меша персонажа заменить тип данных matrix.element на SharedArrayBuffer
+    вызвать у prototype = Object3D.toJSON() - для отправки в паралельный поток или один раз загрузить 3Д модель персонажа в паралельном потоке
+    отправить в паралельный поток links, prototype
+2) по 

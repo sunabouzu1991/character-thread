@@ -15,6 +15,8 @@ import HandObject from './src/gaming-model/HandObject.js';
 
 import KeyboardAndMouseForCharacter from './src/model-control/KeyboardAndMouseForCharacter.js';
 
+import { MediatorThreadCharacter } from './src/character/MediatorThread.js';
+
 
 var data = document.getElementById('data');
 var viewWindow = document.getElementById('app');
@@ -84,6 +86,7 @@ function initialize () {
 	window.transformControls = transformControls;
 	window.animations = animations;
 	window.headCam = character.camera;
+	window.MediatorThreadCharacter = MediatorThreadCharacter;
 }
 
 setTimeout(initialize, 1000);

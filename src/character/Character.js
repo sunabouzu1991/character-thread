@@ -12,10 +12,10 @@ import { Object3D } from "three";
 /**класс Посредник
  * @class
  * @property {Boolean} isCharacter
- * @property {HandObject | undefined} handObject
+ * @property {HandObject | undefined} handObject - объект по которому настраиваются таргетовые кости
  * @property {Object3D} FPVcam - добавляем камеру для вида от первого лица
- * @method setState(value) - устанавливаем состояние
- * @method setSubState(value) - устанавливаем подсостояние
+ * @method setState - устанавливаем состояние
+ * @method setSubState - устанавливаем подсостояние
  * @method camRotate - вращение коробкой для FPV камеры, указанием пиксельных координат
 */
 export default class Character {
